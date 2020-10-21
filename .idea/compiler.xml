@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-03-BeanScope-Singleton-Prototype" />
         <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="Spring-04-BeanLifeCycle" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +17,8 @@
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
       <module name="Spring-02-DI-SetterInjection" target="1.8" />
       <module name="Spring-03-BeanScope-Singleton-Prototype" target="1.8" />
+      <module name="Spring-04-BeanLifeCycle" target="1.8" />
+      <module name="Spring-04-BeanLifeCycle-Init and Destroy Method" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
