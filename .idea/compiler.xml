@@ -12,6 +12,7 @@
         <module name="Spring-03-BeanScope-Singleton-Prototype" />
         <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-04-BeanLifeCycle" />
+        <module name="Spring-05-JavaAnnotations-Qualifier" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="Spring-04-BeanLifeCycle" target="1.8" />
       <module name="Spring-04-BeanLifeCycle-Init and Destroy Method" target="1.5" />
       <module name="Spring-05-JavaAnnotations-Autowired" target="1.8" />
+      <module name="Spring-05-JavaAnnotations-Qualifier" target="1.8" />
       <module name="Spring-05-JavaAnotations-Component" target="1.8" />
     </bytecodeTargetLevel>
   </component>
