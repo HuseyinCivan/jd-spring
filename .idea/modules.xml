@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-06-JavaCode-Configuration/Spring-06-JavaCode-Configuration.iml" filepath="$PROJECT_DIR$/Spring-06-JavaCode-Configuration/Spring-06-JavaCode-Configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-06-PostConstruct-PreDestroy/Spring-06-PostConstruct-PreDestroy.iml" filepath="$PROJECT_DIR$/Spring-06-PostConstruct-PreDestroy/Spring-06-PostConstruct-PreDestroy.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-Demo/Spring-07-SpringBoot-Demo.iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-Demo/Spring-07-SpringBoot-Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-Ioc-DI-Lab/Spring-07-SpringBoot-Ioc-DI-Lab.iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-Ioc-DI-Lab/Spring-07-SpringBoot-Ioc-DI-Lab.iml" />
     </modules>
   </component>
 </project>
