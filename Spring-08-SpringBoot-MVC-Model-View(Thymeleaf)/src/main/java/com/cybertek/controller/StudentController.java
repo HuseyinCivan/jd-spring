@@ -1,6 +1,7 @@
 package com.cybertek.controller;
 
 import com.cybertek.model.Student;
+import lombok.Getter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,6 +34,8 @@ public class StudentController {
         numbers.add(4);
         numbers.add(5);
         numbers.add(7);
+        numbers.add(200);
+        numbers.add(700);
         model.addAttribute("numbers",numbers);
 
         //print your birthday
@@ -48,5 +51,12 @@ public class StudentController {
 
 
         return "student/welcome";
+   }
+
+   @GetMapping("/register")
+    public String homepage2(){
+
+
+        return "student/register";
    }
 }

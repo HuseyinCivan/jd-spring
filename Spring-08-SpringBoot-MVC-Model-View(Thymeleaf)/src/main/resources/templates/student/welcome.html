@@ -17,5 +17,29 @@ Welcome to Spring Class !!!
 <h3 th:text="${student.getFirstName()}"></h3>
 <h3 th:text="${student.firstName}"></h3>
 
+<!--Link-->
+
+<a th:href="@{https://amazon.com}">Amazon</a><br>
+<a th:href="@{/student/register}">Register</a><br>
+
+
+<!--Adding parameters to link-->
+<a th:href="@{/student/welcome(id=3)}">Link2</a><br>
+<a th:href="@{/student/welcome(id=${student.id})}">Link3</a><br>
+
+
+<!--Iteration-->
+
+<ul>
+    <li th:each="number : ${numbers}" th:text="${number}" ></li>
+
+</ul>
+
+<!--Fragment-->
+
+<div th:replace="fragments/footer :: foter"></div>
+<!--footer yazdigimizda class in icindekilerin hepsi geldi, adini foter yaptik-->
+
+
 </body>
 </html>
