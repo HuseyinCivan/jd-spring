@@ -10,6 +10,7 @@
         <module name="Spring-05-JavaAnnotations-Autowired" />
         <module name="Spring-06-PostConstruct-PreDestroy" />
         <module name="Spring-07-SpringBoot-Ioc-DI-Lab" />
+        <module name="Spring-08-SpringBoot-MVC-Form" />
         <module name="Spring-07-SpringBoot-Demo" />
         <module name="Spring-06-JavaCode-Configuration" />
         <module name="Spring-04-BeanLifeCycle" />
@@ -39,6 +40,7 @@
       <module name="Spring-07-SpringBoot-Demo" target="11" />
       <module name="Spring-07-SpringBoot-Ioc-DI-Lab" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Controller" target="11" />
+      <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -47,6 +49,7 @@
       <module name="Spring-07-SpringBoot-Demo" options="-parameters" />
       <module name="Spring-07-SpringBoot-Ioc-DI-Lab" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Controller" options="-parameters" />
+      <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" options="-parameters" />
     </option>
   </component>
