@@ -222,10 +222,10 @@ select *
 from employees
 where region_id in (select region_id from regions where country = 'Asia' or country = 'Canada');
 
---first name where work in Asia.........................................
-select first_name, (Select Max(salary) from employees) - salary
+--first name where work Asia and Canada and how much less making from the highest employee in the company
+select first_name, (select max(salary) from employees) - salary as salary_less_than_max
 from employees
-where region_id in (select region_id from regions where country = 'Asia' or country = 'Canada');
+where region_id in (select region_id from regions where country in ('Asia', 'Canada'));
 
 --write a query that returns all of those employees that work in the kids division and the dates at which those employees were hired is greater than all of the hire_dates of employees who work in the maintanance department
 select *
@@ -273,41 +273,74 @@ from (select first_name,
       from employees) a
 group by category;
 
-select * from employees;
-select * from regions;
+select *
+from employees;
+select *
+from regions;
 
-select first_name,country from employees e,regions r where r.region_id = e.employee_id;
+select first_name, country
+from employees e,
+     regions r
+where r.region_id = e.employee_id;
 
-select first_name, email, division, d.department from employees e, departments d, regions r
-where e.department = d.department and e.region_id = r.region_id;
+select first_name, email, division, d.department
+from employees e,
+     departments d,
+     regions r
+where e.department = d.department
+  and e.region_id = r.region_id;
 
-select first_name, country from employees inner join regions on employees.region_id = regions.region_id;
+select first_name, country
+from employees
+         inner join regions on employees.region_id = regions.region_id;
 
-select first_name, email, division from employees inner join departments on employees.department = departments.department;
+select first_name, email, division
+from employees
+         inner join departments on employees.department = departments.department;
 
-select first_name,email,division,country from employees e inner join departments d on e.department=d.department inner join regions r on e.region_id = r.region_id where email is not null;
+select first_name, email, division, country
+from employees e
+         inner join departments d on e.department = d.department
+         inner join regions r on e.region_id = r.region_id
+where email is not null;
 
-select distinct department from employees; --27
-select distinct department from departments; --24
+select distinct department
+from employees; --27
+select distinct department
+from departments; --24
 
-select distinct e.department , d.department from employees e right join departments d on e.department = d.department; --24
-select distinct e.department , d.department from employees e left join departments d on e.department = d.department; --27
-select distinct e.department , d.department from employees e full join departments d on e.department = d.department; --28
+select distinct e.department, d.department
+from employees e
+         right join departments d on e.department = d.department; --24
+select distinct e.department, d.department
+from employees e
+         left join departments d on e.department = d.department; --27
+select distinct e.department, d.department
+from employees e
+         full join departments d on e.department = d.department; --28
 
-select department from employees
+select department
+from employees
 union
-select department from departments
+select department
+from departments
 union
-select country from regions;
+select country
+from regions;
 
-select department from employees
+select department
+from employees
 union all
-select department from departments
+select department
+from departments
 union all
-select country from regions;
+select country
+from regions;
 
-select department from employees
-except
-select department from departments;
+select department
+from employees
+    except
+select department
+from departments;
 
 
