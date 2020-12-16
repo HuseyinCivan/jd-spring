@@ -4,7 +4,6 @@ import com.cybertek.entity.Department;
 import com.cybertek.entity.Employee;
 import com.cybertek.entity.Region;
 import com.cybertek.enums.Gender;
-import com.cybertek.repository.DepartmentRepository;
 import com.cybertek.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -48,8 +47,8 @@ public class DataGenerator implements CommandLineRunner {
 
 
         e1.setDepartment(d1);
-        e2.setDepartment(d2);
-        e3.setDepartment(d3);
+        e2.setDepartment(d1);
+        e3.setDepartment(d1);
         e4.setDepartment(d4);
         e5.setDepartment(d5);
 
@@ -60,11 +59,12 @@ public class DataGenerator implements CommandLineRunner {
         e5.setRegion(r5);
 
 
-        employeeList.addAll(Arrays.asList(e1,e2,e3,e4,e5));
-//        departmentList.addAll(Arrays.asList(d1,d2,d3,d5));
+        employeeList.addAll(Arrays.asList(e1, e2, e3, e4, e5));
+
 
         employeeRepository.saveAll(employeeList);
-//        departmentRepository.saveAll(departmentList);  //employee artik department in superclassi o yuzden sadece super class save etsen subclass da geliyor
+        employeeRepository.deleteById(1);
+
 
     }
 }
