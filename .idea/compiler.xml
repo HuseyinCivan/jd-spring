@@ -21,6 +21,7 @@
         <module name="Spring-05-JavaAnotations-Component" />
         <module name="Spring-03-BeanScope-Singleton-Prototype" />
         <module name="Spring-08-SpringBoot-MVC-Controller" />
+        <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-05-JavaAnotations-Value" />
         <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-09-SQL-Review" />
@@ -46,6 +47,7 @@
       <module name="Spring-08-SpringBoot-MVC-Controller" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" target="11" />
+      <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
       <module name="Spring-09-SQL-Review" target="11" />
     </bytecodeTargetLevel>
@@ -57,6 +59,7 @@
       <module name="Spring-08-SpringBoot-MVC-Controller" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="Spring-09-SQL-Review" options="-parameters" />
       <module name="bunuSil++" options="-parameters" />
