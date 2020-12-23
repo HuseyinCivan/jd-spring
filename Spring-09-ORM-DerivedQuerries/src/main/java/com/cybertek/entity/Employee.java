@@ -4,6 +4,7 @@ import com.cybertek.enums.Gender;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -13,6 +14,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 
 public class Employee extends BaseEntity{
     //employees (id, first_name, last_name, email, hire_date, department, gender, salary, region_id)
