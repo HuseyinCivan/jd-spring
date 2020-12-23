@@ -13,7 +13,6 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-
 public class Genre extends BaseEntity {
 
     private String name;

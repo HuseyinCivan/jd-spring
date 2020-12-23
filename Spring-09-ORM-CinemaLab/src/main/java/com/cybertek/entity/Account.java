@@ -11,8 +11,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name= "account_details")
-public class Account  extends BaseEntity{
+@Table(name = "account_details")
+public class Account extends BaseEntity {
 
     private String name;
     private String address;
@@ -20,7 +20,6 @@ public class Account  extends BaseEntity{
     private String state;
     private String city;
     private Integer age;
-
     @Column(name = "postal_code")
     private String postalCode;
 
@@ -29,6 +28,7 @@ public class Account  extends BaseEntity{
 
     @OneToOne(mappedBy = "account")
     private User user;
+
 
     public Account(String name, String address, String country, String state, String city, Integer age, String postalCode, UserRole role) {
         this.name = name;

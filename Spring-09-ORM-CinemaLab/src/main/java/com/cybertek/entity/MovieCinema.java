@@ -11,8 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
-
-public class MovieCinema extends BaseEntity{
+public class MovieCinema extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "movie_id")
@@ -22,11 +21,10 @@ public class MovieCinema extends BaseEntity{
     @JoinColumn(name = "cinema_id")
     private Cinema cinema;
 
-
     @Column(columnDefinition = "TIMESTAMP")
-    private LocalDateTime localDateTime;
+    private LocalDateTime dateTime;
 
-    public MovieCinema(LocalDateTime localDateTime) {
-        this.localDateTime = localDateTime;
+    public MovieCinema(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
     }
 }
