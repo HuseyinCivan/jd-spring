@@ -8,29 +8,30 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-05-JavaAnnotations-Autowired" />
-        <module name="Spring-06-PostConstruct-PreDestroy" />
-        <module name="Spring-07-SpringBoot-Ioc-DI-Lab" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
         <module name="Spring-07-SpringBoot-Demo" />
         <module name="Spring-09-ORM-TableCreation" />
         <module name="Spring-09-ORM-Mapping-ManyToOne" />
-        <module name="Spring-09-ORM-Mapping-ManyToMany" />
-        <module name="Spring-09-ORM-OneToMany" />
         <module name="Spring-06-JavaCode-Configuration" />
         <module name="Spring-04-BeanLifeCycle" />
         <module name="bunuSil++" />
-        <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" />
         <module name="Spring-01-SpringContainer" />
-        <module name="Spring-05-JavaAnotations-Component" />
         <module name="Spring-03-BeanScope-Singleton-Prototype" />
+        <module name="Spring-09-ORM-Mapping-JPQL-NameQueries" />
         <module name="Spring-08-SpringBoot-MVC-Controller" />
-        <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-09-ORM-DerivedQuerries" />
         <module name="Spring-05-JavaAnotations-Value" />
         <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="Spring-09-ORM-CinemaLab" />
+        <module name="Spring-06-PostConstruct-PreDestroy" />
+        <module name="Spring-07-SpringBoot-Ioc-DI-Lab" />
+        <module name="Spring-09-ORM-Mapping-ManyToMany" />
+        <module name="Spring-09-ORM-OneToMany" />
+        <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" />
+        <module name="Spring-05-JavaAnotations-Component" />
+        <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-09-SQL-Review" />
         <module name="Spring-05-JavaAnnotations-Qualifier" />
-        <module name="Spring-09-ORM-CinemaLab" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -54,6 +55,7 @@
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" target="11" />
       <module name="Spring-09-ORM-CinemaLab" target="11" />
       <module name="Spring-09-ORM-DerivedQuerries" target="11" />
+      <module name="Spring-09-ORM-Mapping-JPQL-NameQueries" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
@@ -71,6 +73,7 @@
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" options="-parameters" />
       <module name="Spring-09-ORM-CinemaLab" options="-parameters" />
       <module name="Spring-09-ORM-DerivedQuerries" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-JPQL-NameQueries" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />

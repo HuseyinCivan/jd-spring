@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf).iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-CinemaLab/Spring-09-ORM-CinemaLab.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/Spring-09-ORM-CinemaLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-DerivedQuerries/Spring-09-ORM-DerivedQuerries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-DerivedQuerries/Spring-09-ORM-DerivedQuerries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NameQueries/Spring-09-ORM-Mapping-JPQL-NameQueries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NameQueries/Spring-09-ORM-Mapping-JPQL-NameQueries.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/Spring-09-ORM-Mapping-ManyToMany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/Spring-09-ORM-Mapping-ManyToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/Spring-09-ORM-Mapping-ManyToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/Spring-09-ORM-Mapping-ManyToOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" />

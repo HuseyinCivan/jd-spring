@@ -27,6 +27,7 @@
         <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-DerivedQuerries/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NameQueries/pom.xml" />
       </list>
     </option>
   </component>
