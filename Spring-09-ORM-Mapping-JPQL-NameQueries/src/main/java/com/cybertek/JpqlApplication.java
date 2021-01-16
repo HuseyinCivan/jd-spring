@@ -1,5 +1,6 @@
 package com.cybertek;
 
+import com.cybertek.repository.DepartmentRepository;
 import com.cybertek.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -12,6 +13,8 @@ public class JpqlApplication {
 
     @Autowired
     EmployeeRepository employeeRepository;
+    @Autowired
+    DepartmentRepository departmentRepository;
 
 
     public static void main(String[] args) {
@@ -26,8 +29,17 @@ public class JpqlApplication {
 
         System.out.println(employeeRepository.getEmployeeByEmail("dtrail8@tamu.edu").get());
 
+        employeeRepository.updateEmployeeJPQL(1);
+
+        employeeRepository.updateEmployeeNativeQuery(2);
+
+        System.out.println(employeeRepository.retrieveEmployeesSalaryGreaterThan(100000));
+
+        System.out.println(departmentRepository.findOzzydepartment("Kids"));
+
+        System.out.println(departmentRepository.countAllDepartments());
+
 
     }
-
 
 }
