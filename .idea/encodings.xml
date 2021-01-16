@@ -15,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/Spring-09-ORM-OneToMany/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring-09-SQL-Review/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-10-Security-CustomConfiguration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-10-Security-DefaultConfiguration/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bunuSil++/src/main/java" charset="UTF-8" />
   </component>
 </project>

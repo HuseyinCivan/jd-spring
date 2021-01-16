@@ -28,10 +28,12 @@
         <option value="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-DerivedQuerries/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NameQueries/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-10-Security-DefaultConfiguration/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-10-Security-CustomConfiguration/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="14" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="14" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
