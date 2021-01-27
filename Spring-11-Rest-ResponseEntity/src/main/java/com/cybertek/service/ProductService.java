@@ -1,4 +1,4 @@
-package service;
+package com.cybertek.service;
 
 import com.cybertek.entity.Product;
 

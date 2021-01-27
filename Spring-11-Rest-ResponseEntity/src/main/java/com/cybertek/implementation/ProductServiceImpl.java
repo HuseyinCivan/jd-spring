@@ -1,4 +1,4 @@
-package implementation;
+package com.cybertek.implementation;
 
 import com.cybertek.entity.Product;
 import com.cybertek.repository.ProductRepository;

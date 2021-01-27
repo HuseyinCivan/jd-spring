@@ -1,4 +1,4 @@
-package repository;
+package com.cybertek.repository;
 
 import com.cybertek.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;

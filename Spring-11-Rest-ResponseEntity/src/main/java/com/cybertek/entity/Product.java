@@ -1,4 +1,4 @@
-package entity;
+package com.cybertek.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

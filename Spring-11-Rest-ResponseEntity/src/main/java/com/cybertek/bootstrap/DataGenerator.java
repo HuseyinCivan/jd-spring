@@ -1,4 +1,4 @@
-package bootstrap;
+package com.cybertek.bootstrap;
 
 import com.cybertek.entity.Product;
 import com.cybertek.repository.ProductRepository;
