@@ -34,6 +34,8 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-10-Security-HttpBasic-AutRoleBase/Spring-10-Security-HttpBasic-AutRoleBase.iml" filepath="$PROJECT_DIR$/Spring-10-Security-HttpBasic-AutRoleBase/Spring-10-Security-HttpBasic-AutRoleBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-10-Security-HttpBasic-Database/Spring-10-Security-HttpBasic-Database.iml" filepath="$PROJECT_DIR$/Spring-10-Security-HttpBasic-Database/Spring-10-Security-HttpBasic-Database.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-HttpVerbs-Legacy/Spring-11-Rest-HttpVerbs-Legacy.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-HttpVerbs-Legacy/Spring-11-Rest-HttpVerbs-Legacy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-HttpVerbs-Prefered/Spring-11-Rest-HttpVerbs-Prefered.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-HttpVerbs-Prefered/Spring-11-Rest-HttpVerbs-Prefered.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/Spring-11-Rest-ResponseEntity.iml" filepath="$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/Spring-11-Rest-ResponseEntity.iml" />
       <module fileurl="file://$PROJECT_DIR$/bunuSil++/bunuSil++.iml" filepath="$PROJECT_DIR$/bunuSil++/bunuSil++.iml" />
     </modules>
   </component>
