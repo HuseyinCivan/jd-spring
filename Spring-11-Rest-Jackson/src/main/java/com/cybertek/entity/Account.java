@@ -19,6 +19,7 @@ import javax.persistence.*;
 @JsonIgnoreProperties(value = {"state","postalCode"},ignoreUnknown = true)
 public class Account extends BaseEntity {
 
+
     private String name;
     private String address;
     private String country;

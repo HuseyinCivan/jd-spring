@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @JsonIgnoreProperties(value={"hibernate_Lazy_Initializer"},ignoreUnknown = true)
-
 public class MovieCinema extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -34,7 +33,7 @@ public class MovieCinema extends BaseEntity {
     @Override
     public String toString() {
         return "MovieCinema{" +
-                "cinema=" + cinema +
+                "dateTime=" + dateTime +
                 '}';
     }
 }
