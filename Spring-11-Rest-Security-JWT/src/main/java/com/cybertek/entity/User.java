@@ -19,11 +19,11 @@ import javax.persistence.*;
 @Where(clause = "is_deleted=false")
 public class User extends BaseEntity {
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false,unique = true)
     private String email;
 
-    @Column(nullable = false, unique = true)
-    private String user_name;
+    @Column(nullable = false,unique = true)
+    private String username;
 
     @Column(nullable = false)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
@@ -31,6 +31,8 @@ public class User extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     private UserRole role;
+
+    private Boolean isVerified;
 
     @Enumerated(EnumType.STRING)
     private UserState state;
