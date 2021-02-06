@@ -1,6 +1,7 @@
 package com.cybertek.entity;
 
 import com.cybertek.enums.UserRole;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -28,7 +29,8 @@ public class Account extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private UserRole role = UserRole.USER;
 
-    @OneToOne(mappedBy = "account")
+    @OneToOne(mappedBy = "account",fetch = FetchType.LAZY)
+    @JsonBackReference
     private User user;
 
 
