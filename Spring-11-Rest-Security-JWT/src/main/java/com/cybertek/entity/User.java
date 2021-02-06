@@ -1,6 +1,5 @@
 package com.cybertek.entity;
 
-
 import com.cybertek.enums.UserRole;
 import com.cybertek.enums.UserState;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -36,6 +35,4 @@ public class User extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     private UserState state;
-
-
 }
