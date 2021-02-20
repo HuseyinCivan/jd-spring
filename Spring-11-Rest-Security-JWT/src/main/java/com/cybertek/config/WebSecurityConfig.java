@@ -1,6 +1,5 @@
 package com.cybertek.config;
 
-
 import com.cybertek.service.SecurityFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -18,12 +17,23 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private SecurityFilter securityFilter;
 
-
     @Override
     @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
+
+    private static final String[] permittedUrls ={
+            "/authenticate",
+            "/create-user",
+            "/api/p1/**",
+            "/v3/api-docs/**",
+            "/swagger-resources/**",
+            "/configuration/security",
+            "/swagger-ui.html",
+            "/swagger-ui/**",
+            "/webjars/**",
+    };
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
@@ -32,10 +42,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                 .disable()
                 .authorizeRequests()
-                .antMatchers("/authenticate")
+                .antMatchers(permittedUrls)
                 .permitAll()
                 .anyRequest()
                 .authenticated();
+
         http.addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
+
+
     }
 }

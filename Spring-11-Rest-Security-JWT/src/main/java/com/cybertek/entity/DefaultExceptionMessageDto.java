@@ -7,10 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-
 public class DefaultExceptionMessageDto {
 
     private String message;
-
-
 }

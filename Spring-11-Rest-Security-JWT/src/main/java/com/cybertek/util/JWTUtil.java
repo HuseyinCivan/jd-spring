@@ -25,15 +25,16 @@ public class JWTUtil {
         claims.put("username", user.getUsername());
         claims.put("email", user.getEmail());
         return createToken(claims, user.getUsername());
-
     }
 
     private String createToken(Map<String, Object> claims, String username) {
-        return Jwts.builder()
+
+        return Jwts
+                .builder()
                 .setClaims(claims)
                 .setSubject(username)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10)) // 10hours token validity
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10)) //10 hours token validity
                 .signWith(SignatureAlgorithm.HS256, secret).compact();
 
     }
@@ -42,27 +43,26 @@ public class JWTUtil {
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
     }
 
-    private <T> T extractClaim(String token, Function<Claims, T> claimsRevolver) {
+    private <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
         final Claims claims = extractAllClaims(token);
-        return claimsRevolver.apply(claims);
+        return claimsResolver.apply(claims);
     }
 
-    public String extractUsername(String token){
-        return extractClaim(token,Claims::getSubject);
+    public String extractUsername(String token) {
+        return extractClaim(token, Claims::getSubject);
     }
 
-    public Date extractExpiration(String token){
-        return extractClaim(token,Claims::getExpiration);
+    public Date extractExpiration(String token) {
+        return extractClaim(token, Claims::getExpiration);
+
     }
 
-    private Boolean isTokenExpired(String token){
+    private Boolean isTokenExpired(String token) {
         return extractExpiration(token).before(new Date());
     }
 
-
-    public Boolean validateToken(String token, UserDetails userDetails){
-        final String username =extractUsername(token);
-        return (username.equals(userDetails.getUsername()) && isTokenExpired(token));
+    public Boolean validateToken(String token, UserDetails userDetails) {
+        final String username = extractUsername(token);
+        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
-
 }

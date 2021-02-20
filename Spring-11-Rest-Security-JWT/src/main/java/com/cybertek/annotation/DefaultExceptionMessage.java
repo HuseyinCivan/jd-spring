@@ -10,6 +10,4 @@ import java.lang.annotation.Target;
 public @interface DefaultExceptionMessage {
 
     String defaultMessage() default "";
-
-
 }

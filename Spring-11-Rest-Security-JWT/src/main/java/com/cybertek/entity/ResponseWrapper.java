@@ -8,8 +8,8 @@ import org.springframework.http.HttpStatus;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResponseWrapper {
 
     private boolean success;
