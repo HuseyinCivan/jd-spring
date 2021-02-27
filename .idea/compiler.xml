@@ -41,6 +41,7 @@
         <module name="Spring-05-JavaAnotations-Component" />
         <module name="Spring-11-Rest-OpenApi3.0" />
         <module name="Spring-09-ORM-Mapping-OneToOne" />
+        <module name="Spring-13-UnitTesting-Junit5" />
         <module name="Spring-11-Rest-RestTemplate" />
         <module name="Spring-10-Security-CustomConfiguration" />
         <module name="Spring-09-SQL-Review" />
@@ -90,6 +91,7 @@
       <module name="Spring-11-Rest-SchoolLab" target="11" />
       <module name="Spring-11-Rest-Security-JWT" target="11" />
       <module name="Spring-12-AOP" target="11" />
+      <module name="Spring-13-UnitTesting-Junit5" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
